@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Retratos pintados a mano de mascotas. Inmortaliza el vínculo con tu mejor amigo en una obra de arte única y duradera.">
+  <title>María Eugenia Cozzi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#inicio" class="logo" aria-label="Inicio">María Eugenia Cozzi</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+      <div class="nav-menu" id="navMenu" role="navigation" aria-label="Navegación principal">
+        <!-- Overlay DENTRO del menú para no tragar clicks de los links -->
+        <div class="nav-overlay" aria-hidden="true" style="opacity: 0.0;"></div>
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#galeria" class="nav-link">Mis dibujos</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#pedi-tu-retrato" class="nav-link">Comprá tu retrato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / INICIO -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="hero-body">
+        <div class="content-group">
+          <div class="bottom-wave"></div>
+
+          <div class="columns-wrapper">
+
+            <!-- Izquierda: texto -->
+            <div class="text-block">
+              <h1 id="hero-title" class="reveal">
+                <span class="word">hay</span><br>
+                <span class="word">miradas</span><br>
+                <span class="word on-blob">que</span><br>
+                <span class="word on-blob">merecen</span><br>
+                <span class="word"><strong>durar</strong></span><br>
+                <span class="word on-blob">para</span><br>
+                <span class="word">siempre</span>
+              </h1>
+              <div class="divider reveal reveal-delay-1"></div>
+              <p class="subtitle reveal reveal-delay-2"></p>
+              <a href="#galeria" class="cta reveal reveal-delay-3">
+                Ver galería
+                <svg width="16" height="12" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 7H17M17 7L11 1M17 7L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Derecha: blob + gato -->
+            <div class="cat-wrap">
+              <div class="blob hero-blob" aria-hidden="true"></div>
+              <img src="img/gato.webp" alt="Retrato pintado a mano de un gato" loading="eager" class="hero-cat reveal reveal-delay-3">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA - MASONRY -->
+    <section id="galeria" class="gallery section" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title" class="section-title reveal">Galería</h2>
+        <div class="gallery-grid">
+          <article class="gallery-item" style="--item-ratio: 3/4; --item-rot: -2deg;" data-item-index="0">
+            <img src="img/1.webp" alt="Retrato 1" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 3/4; --item-rot: 1.5deg;" data-item-index="1">
+            <img src="img/2.webp" alt="Retrato 2" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 19/20; --item-rot: -1deg;" data-item-index="2">
+            <img src="img/3.webp" alt="Retrato 3" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 1/1; --item-rot: 2deg;" data-item-index="3">
+            <img src="img/4.webp" alt="Retrato 4" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 4/5; --item-rot: -1.5deg;" data-item-index="4">
+            <img src="img/5.webp" alt="Retrato 5" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 3/4; --item-rot: 2deg;" data-item-index="5">
+            <img src="img/lapices.jpg" alt="Materiales de trabajo" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 4/5; --item-rot: 1deg;" data-item-index="6">
+            <img src="img/6.webp" alt="Retrato 6" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 4/5; --item-rot: -2.5deg;" data-item-index="6">
+            <img src="img/7.webp" alt="Retrato 7" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 1/1; --item-rot: 1.8deg;" data-item-index="7">
+            <img src="img/8.webp" alt="Retrato 8" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 7/5; --item-rot: -1deg;" data-item-index="8">
+            <img src="img/9.webp" alt="Retrato 9" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 4/3; --item-rot: 1.5deg;" data-item-index="9">
+            <img src="img/gatos_marrones.jpg" alt="Gatos marrones" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 3/2; --item-rot: 2deg;" data-item-index="10">
+            <img src="img/10.webp" alt="Retrato 10" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 1/1; --item-rot: -2deg;" data-item-index="10">
+            <img src="img/11.webp" alt="Retrato 11" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 6/5; --item-rot: 1deg;" data-item-index="11">
+            <img src="img/12.webp" alt="Retrato 12" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 4/5; --item-rot: -1.5deg;" data-item-index="12">
+            <img src="img/13.webp" alt="Retrato 13" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 7/5; --item-rot: 2deg;" data-item-index="13">
+            <img src="img/14.webp" alt="Retrato 14" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 4/5; --item-rot: -1deg;" data-item-index="14">
+            <img src="img/15.webp" alt="Retrato 15" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 7/5; --item-rot: 1.5deg;" data-item-index="15">
+            <img src="img/16.webp" alt="Retrato 16" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+          <article class="gallery-item" style="--item-ratio: 4/3; --item-rot: -2deg;" data-item-index="16">
+            <img src="img/aaa.jpg" alt="Proceso creativo" loading="lazy">
+            <div class="gallery-overlay"><span></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="about section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title reveal">Sobre mí</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="reveal reveal-delay-1">Dibujo desde que tengo memoria, o incluso antes de poder <strong>recordarlo</strong>.</p>
+            <p class="reveal reveal-delay-2">A los <strong>seis años</strong> empecé mi primer <strong>taller de dibujo</strong> y desde entonces el <strong>arte</strong> ha sido parte de mi vida. Estudié <strong>Profesorado de Bellas Artes</strong> grabado y dibujo y me recibí rápidamente. Con el tiempo fui explorando distintos caminos dentro del arte, pero el <strong>dibujo</strong> siempre estuvo en el <strong>centro</strong>: <strong>observar</strong>, entender las <strong>formas</strong>, la <strong>luz</strong>, las <strong>sombras</strong> y aprender a <strong>mirar de verdad</strong>.</p>
+            <p class="reveal reveal-delay-3">Después <strong>viajé</strong>, <strong>estudié afuera</strong> y volví con muchas ganas de <strong>pintar</strong>. Comencé una etapa de <strong>exposiciones</strong>, <strong>ferias</strong> y <strong>venta de obras</strong>, con distintas series y temáticas, siempre dentro de un lenguaje <strong>realista</strong> y muy ligado a la <strong>observación</strong>.</p>
+            <p class="reveal reveal-delay-4">Hasta que llegó la <strong>pandemia</strong>.</p>
+            <p class="reveal reveal-delay-5">Como para tantos, todo se <strong>detuvo</strong>. El <strong>circuito artístico</strong> desapareció por un tiempo y hubo que <strong>reinventarse</strong>. En ese contexto, conservando mis alumnos del taller y la <strong>docencia escolar</strong>, surgió casi por casualidad una idea: <strong>dibujar mascotas y retratos por encargo</strong>.</p>
+            <p class="reveal reveal-delay-1">Nunca imaginé que esos primeros dibujos se convertirían en el inicio de un <strong>nuevo proyecto</strong>.</p>
+            <p class="reveal reveal-delay-2">Hoy dibujo <strong>perros, gatos y personas</strong> que llegan a mi mesa con sus <strong>historias</strong>, sus <strong>gestos</strong> y esos <strong>pequeños detalles</strong> que los hacen <strong>únicos</strong>.</p>
+            <p class="reveal reveal-delay-3">Porque no se trata solo de lograr un <strong>parecido</strong>, sino de <strong>capturar</strong> algo de ese <strong>vínculo</strong>: un <strong>recuerdo</strong>, una <strong>mirada</strong>, una <strong>compañía</strong>… algo que pueda quedarse para siempre en un <strong>papel</strong>.</p>
+            <p class="reveal reveal-delay-4">Este <strong>proyecto</strong> también me abrió una <strong>puerta</strong> que creía un poco cerrada: volver, de a poco, a explorar <strong>otras formas de pintar</strong>, <strong>otros temas</strong> y <strong>otras historias</strong> que también forman parte de mí.</p>
+            <p class="reveal reveal-delay-5">Después de tantos años de <strong>pintar y dibujar</strong>, la <strong>vida</strong> me llevó por un <strong>camino</strong> que no había <strong>planeado</strong>.</p>
+            <p class="reveal reveal-delay-1">Y, curiosamente, fue el <strong>dibujo</strong> —ese <strong>compañero de siempre</strong>— el que terminó convirtiéndose en el <strong>motor</strong> de este proyecto.</p>
+            <p class="reveal reveal-delay-2">Supongo que a veces uno no encuentra un <strong>nuevo camino</strong>: simplemente lo <strong>dibuja</strong>.</p>
+          </div>
+          <div class="about-images reveal reveal-delay-2">
+            <div class="about-image">
+              <img src="img/gato_dibujo.jpeg" alt="Mariu trabajando en su estudio" loading="lazy">
+            </div>
+            <div class="about-image">
+              <img src="img/post_ig.jpg" alt="Obra en proceso" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEDÍ TU RETRATO -->
+    <section id="pedi-tu-retrato" class="order section" aria-labelledby="order-title">
+      <div class="container">
+        <h2 id="order-title" class="section-title reveal">Pedí tu retrato</h2>
+        <p class="section-intro reveal reveal-delay-1">Cada retrato es una obra única, pintada a mano con dedicación y cariño. Elegí el tamaño que mejor se adapte a tu espacio y escribime para conocer todos los detalles.</p>
+
+        <div class="order-hero reveal reveal-delay-2">
+          <img src="img/retrato_perro.webp" alt="Ejemplo de retrato de perro" loading="lazy">
+        </div>
+
+        <!-- Tabla de precios -->
+        <div class="pricing-table reveal reveal-delay-1">
+          <table>
+            <thead>
+              <tr>
+                <th>Tamaño</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>15 x 15 cm</td><td>$48.000</td></tr>
+              <tr><td>13 x 18 cm</td><td>$52.000</td></tr>
+              <tr><td>15 x 21 cm</td><td>$57.000</td></tr>
+              <tr><td>15 x 24 cm</td><td>$62.000</td></tr>
+              <tr><td>18 x 24 cm</td><td>$67.000</td></tr>
+              <tr><td>20 x 20 cm</td><td>$70.000</td></tr>
+              <tr><td>20 x 25 cm</td><td>$77.000</td></tr>
+              <tr><td>20 x 30 cm</td><td>$87.000</td></tr>
+              <tr><td>30 x 30 cm</td><td>$96.000</td></tr>
+              <tr><td>30 x 40 cm</td><td>$109.000</td></tr>
+              <tr><td>35 x 50 cm</td><td>$147.000</td></tr>
+              <tr><td>50 x 70 cm</td><td>$216.000</td></tr>
+            </tbody>
+          </table>
+          <p class="pricing-note">Los precios son por retrato individual. El marco es aparte (diferencia no significativa).</p>
+        </div>
+
+        <!-- Información adicional en grid de tarjetas -->
+        <div class="order-info-grid">
+
+          <!-- Enmarcación -->
+          <article class="info-card reveal reveal-delay-2">
+            <h3>🖼️ Enmarcación</h3>
+            <p>Los retratos se pueden entregar <strong>enmarcados listos para colgar</strong>. El marco es aparte, pero la diferencia no es muy significativa.</p>
+          </article>
+
+          <!-- Múltiples mascotas -->
+          <article class="info-card reveal reveal-delay-3">
+            <h3>🐾 Varios animalitos</h3>
+            <p>Si el retrato incluye <strong>2 mascotas</strong>: +20% sobre el precio base.<br>
+            Si son <strong>3 o 4 mascotas</strong>: +30% sobre el precio base.</p>
+          </article>
+
+          <!-- Fotos de referencia -->
+          <article class="info-card reveal reveal-delay-4">
+            <h3>📸 Fotos de referencia</h3>
+            <p>Necesito una o varias imágenes en las que se puedan distinguir los <strong>detalles y los colores reales</strong>. También me gusta <strong>conocer su historia</strong>.</p>
+          </article>
+
+          <!-- Materiales -->
+          <article class="info-card reveal reveal-delay-5">
+            <h3>🎨 Materiales</h3>
+            <p>Los retratos son hechos con <strong>lápices de colores profesionales</strong> sobre papel entre <strong>150 y 200 g</strong>.</p>
+          </article>
+
+          <!-- Forma de pago -->
+          <article class="info-card reveal reveal-delay-1">
+            <h3>💳 Forma de pago</h3>
+            <p>Se abona el <strong>30% del valor</strong> para realizar el encargo. El valor restante se abona en el momento de la entrega por <strong>depósito bancario o transferencia</strong>.</p>
+          </article>
+
+          <!-- Envíos -->
+          <article class="info-card reveal reveal-delay-2">
+            <h3>📦 Envíos</h3>
+            <p>El importe del envío depende de la zona (enviar CP). También puede ser <strong>retirado por zona San Isidro</strong>.</p>
+          </article>
+
+          <!-- Gift cards -->
+          <article class="info-card reveal reveal-delay-3">
+            <h3>🎁 Gift Cards</h3>
+            <p>Si querés regalar un retrato, podés solicitar una <strong>Gift Card</strong>.</p>
+          </article>
+
+        </div>
+
+        <!-- CTA final -->
+        <div class="order-cta reveal reveal-delay-4">
+          <a href="https://wa.me/5491151630101?text=Hola!%20Quiero%20encargar%20un%20retrato%20de%20mi%20mascota" class="btn-primary btn-whatsapp" target="_blank" rel="noopener">
+            Pedí el tuyo
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>&copy; 2026 María Eugenia Cozzi. Todos los derechos reservados.</p>
+      <nav class="social-links" aria-label="Redes sociales">
+        <a href="https://instagram.com/te.sobran.los.motivos" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/5491151630101?text=Hola!%20Quiero%20encargar%20un%20retrato%20de%20mi%20mascota" aria-label="WhatsApp" target="_blank" rel="noopener"> WhatsApp</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT (oculto hasta activar) -->
+  <a href="https://wa.me/5491151630101?text=Hola!%20Quiero%20encargar%20un%20retrato%20de%20mi%20mascota" class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <img src="img/wsp.png" alt="" width="26" height="26" loading="lazy">
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
